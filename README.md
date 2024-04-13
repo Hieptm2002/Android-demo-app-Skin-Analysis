@@ -34,6 +34,11 @@
 4. Pipeline
 * YOLOv5-face -> Dlib -> Mobilenet v2
 5. Demo
+  
+
+https://github.com/Hieptm2002/Android-demo-app-Skin-Analysis/assets/91860427/87ef71bc-61c9-4e6b-beae-29c818430a4c
+
+
 6. Difficulty
 * There was a conflict between the Dlib and Ncnn libraries when building the application, but it has been fixed with the 
 '-fno-exceptions' bug in the NCNN library's CMake file.
@@ -49,6 +54,11 @@
 4. Pipeline
 * YOLOv5-face -> YOLOv8-seg
 5. Demo
+
+
+https://github.com/Hieptm2002/Android-demo-app-Skin-Analysis/assets/91860427/6a3f610c-2fca-40ae-866a-c426756eaf0e
+
+
 6. Difficulty
 There are difficulties in converting the model to ncnn and handling the output when there is only one output. [Solved](https://github.com/Digital2Slave/ncnn-android-yolov8-seg/wiki/Convert-yolov8%E2%80%90seg-to-ncnn-model-step-by-step)
 
@@ -70,6 +80,15 @@ There are difficulties in converting the model to ncnn and handling the output w
 2. Facial Skin Diseases Segmentation
 
 > Future updates
+
+## Note
+
+1. Image from the Gallery
+* Image with face straight, no makeup, no accessories (like glasses, etc.)
+* Images larger than 1280x960 with faces occupying about 70~90% of the frame.
+2. Image from the Camera
+* Image with face straight, no makeup, no accessories (like glasses, etc.)
+* Images with faces occupying about 70~90% of the frame.
 
 ## Reference
 
