@@ -55,10 +55,13 @@ There are difficulties in converting the model to ncnn and handling the output w
 | Eyes Wrinkle     |             87.84%              |                 87.45%               |
 | Smile Wrinkle    |             89.00%              |                 90.00%               |  
 
-> Pytorch=1.10.0+cu102 
+> Pytorch=1.10.0+cu102
+> 
 > Android device: Xiaomi Redmi Note 8 Pro
 
 2. Facial Skin Diseases Segmentation
+
+> Update for future
 
 ## Reference
 
