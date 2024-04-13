@@ -8,6 +8,7 @@
 * We utilized the pre-trained StyleGAN3 model on the FFHQ dataset for initial training. We fine-tuned the model and generated a large set of high-quality images. After careful curation to ensure diversity and clarity, we compiled these into the Self-collected dataset.
 3. Data Labeling
 * To ensure detailed assessment of wrinkles on the face while minimizing interference from unrelated areas, we divided the face into three distinct regions: the forehead, eyes, and mouth using Dlib.
+ ![](areas_wrinkle.jpg)
 * Labeling Pigmentation, Wrinkles, and Pores into three severity levels: Good, Average, and Fair
 ## Facial Skin Diseases Classification
 
