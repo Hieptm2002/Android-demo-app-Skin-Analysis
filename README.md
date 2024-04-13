@@ -8,6 +8,9 @@
 * We utilized the pre-trained StyleGAN3 model on the FFHQ dataset for initial training. We fine-tuned the model and generated a large set of high-quality images. After careful curation to ensure diversity and clarity, we compiled these into the Self-collected dataset.
 3. Data Labeling for Facial Skin Diseases Classification
 * To ensure a detailed assessment of facial wrinkles while minimizing interference from unrelated areas, we divided the face into three distinct regions using Dlib: the forehead, eyes, and mouth.
+
+![](assets/areas_wrinkle.jpg)
+
 * Labeling Pigmentation, Wrinkles, and Pores into three severity levels: Good, Average, and Fair
 4. Data Labeling for Facial Skin Diseases Segmentation
 *  Labeling Wrinkles and Pores for segmentation using [CVAT](https://app.cvat.ai/)
