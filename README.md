@@ -9,7 +9,7 @@
 3. Data Labeling for Facial Skin Diseases Classification
 * To ensure a detailed assessment of facial wrinkles while minimizing interference from unrelated areas, we divided the face into three distinct regions using Dlib: the forehead, eyes, and mouth.
 
-![](assets/areas_wrinkle.jpg)
+![](assets/AreasWrinkle.jpg)
 
 * Labeling Pigmentation, Wrinkles, and Pores into three severity levels: Good, Average, and Fair
 4. Data Labeling for Facial Skin Diseases Segmentation
