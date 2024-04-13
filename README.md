@@ -18,6 +18,9 @@
 2. Facial Skin Diseases Segmentation
 * Yolov8-seg
 
+## Convert Model to Ncnn
+* pt->onnx->ncnn
+
 ## Facial Skin Diseases Classification
 1. IDE
 * [Android Studio](https://androidstudio.googleblog.com/2023/11/android-studio-giraffe-202231-patch-4.html)
@@ -31,6 +34,31 @@
 * There are differences between the image resizing methods of the PIL Python library and other resizing methods on Android (like the ncnn resize), which result in about a 10% decrease in accuracy on the Android test set compared to the PC. Since the PIL Image library is not supported on Android, I wrote a new resize function in C++ that replicates the PIL resize function (Bilinear for rgb image), with cv::Mat as the input and output data type. The accuracy on the Android test set now increase between -1% and 1% compared to the PC.
 
 ## Facial Skin Diseases Segmentation 
+1. IDE
+* [Android Studio](https://androidstudio.googleblog.com/2023/11/android-studio-giraffe-202231-patch-4.html)
+2. Framework
+* [NCNN](https://github.com/Tencent/ncnn)
+3. Language
+* Java, Native C
+4. Demo
+5. Difficulty
+There are difficulties in converting the model to ncnn and handling the output when there is only one output. [Solved](https://github.com/Digital2Slave/ncnn-android-yolov8-seg/wiki/Convert-yolov8%E2%80%90seg-to-ncnn-model-step-by-step)
+
+## Result
+1. Facial Skin Diseases Classification
+2. 
+|   Testset        | Model prediction accuracy on PC | Model prediction accuracy on Android |
+| :--------------: | :-----------------------------: | :----------------------------------: |
+| Pigmnetation     |             84.06%              |                 83.1%                |
+| Pores            |             71.08%              |                 70.28%               |
+| Forehead Wrinkle |             88.23%              |                 88.62%               |
+| Eyes Wrinkle     |             87.84%              |                 87.45%               |
+| Smile Wrinkle    |              89%                |                 90.5%                |  
+
+> Pytorch=1.10.0+cu102 
+> Android device: Xiaomi Redmi Note 8 Pro
+
+2. Facial Skin Diseases Segmentation
 
 ## Reference
 
