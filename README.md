@@ -49,11 +49,11 @@ There are difficulties in converting the model to ncnn and handling the output w
 2. 
 |   Testset        | Model prediction accuracy on PC | Model prediction accuracy on Android |
 | :--------------: | :-----------------------------: | :----------------------------------: |
-| Pigmnetation     |             84.06%              |                 83.1%                |
+| Pigmnetation     |             84.06%              |                 83.10%               |
 | Pores            |             71.08%              |                 70.28%               |
 | Forehead Wrinkle |             88.23%              |                 88.62%               |
 | Eyes Wrinkle     |             87.84%              |                 87.45%               |
-| Smile Wrinkle    |              89%                |                 90.5%                |  
+| Smile Wrinkle    |             89.00%              |                 90.00%               |  
 
 > Pytorch=1.10.0+cu102 
 > Android device: Xiaomi Redmi Note 8 Pro
