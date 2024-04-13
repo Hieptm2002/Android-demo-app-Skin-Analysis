@@ -9,8 +9,8 @@ built with deep learning. The model has an accuracy of 99.38% on the
 
 # Reference
 
-https://pytorch.org/
-https://github.com/deepcam-cn/yolov5-face
-https://github.com/davisking
-https://github.com/ultralytics/ultralytics
-https://github.com/Tencent/ncnn
+https://pytorch.org/.
+https://github.com/deepcam-cn/yolov5-face.
+https://github.com/davisking.
+https://github.com/ultralytics/ultralytics.
+https://github.com/Tencent/ncnn.
