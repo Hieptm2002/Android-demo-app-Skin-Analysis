@@ -19,7 +19,7 @@
 1. Facial Skin Diseases Classification
 * Mobilenet v2
 2. Facial Skin Diseases Segmentation
-* Yolov8-seg
+* YOLOv8-seg
 
 ## Convert Model to Ncnn
 * pt->onnx->ncnn
@@ -31,10 +31,13 @@
 * [NCNN](https://github.com/Tencent/ncnn)
 3. Language
 * Java, Native C
-4. Demo
-5. Difficulty
-* There was a conflict between the Dlib and Ncnn libraries when building the application, but it has been fixed with the -fno-exceptions bug in the NCNN library's CMake file.
-* There are differences between the image resizing methods of the PIL Python library and other resizing methods on Android (like the ncnn resize), which result in about a 10% decrease in accuracy on the Android test set compared to the PC. Since the PIL Image library is not supported on Android, I wrote a new resize function in C++ that replicates the PIL resize function (Bilinear for rgb image), with cv::Mat as the input and output data type. The accuracy on the Android test set now increase between -1% and 1% compared to the PC.
+4. Pipeline
+* YOLOv5-face -> Dlib -> Mobilenet v2
+5. Demo
+6. Difficulty
+* There was a conflict between the Dlib and Ncnn libraries when building the application, but it has been fixed with the 
+'-fno-exceptions' bug in the NCNN library's CMake file.
+* There are differences between the image resizing methods of the PIL Python library and other resizing methods on Android (like the ncnn resize), which result in a 10% decrease in accuracy on the test set on Android compared to PC. Since the PIL Image library is not supported on Android, I wrote a new resize function in C++ that replicates the PIL resize function (Bilinear for rgb image), with cv::Mat as the input and output data type. The accuracy on the Android test set now increase between -1% and 1% compared to the PC.
 
 ## Facial Skin Diseases Segmentation 
 1. IDE
@@ -43,13 +46,15 @@
 * [NCNN](https://github.com/Tencent/ncnn)
 3. Language
 * Java, Native C
-4. Demo
-5. Difficulty
+4. Pipeline
+* YOLOv5-face -> YOLOv8-seg
+5. Demo
+6. Difficulty
 There are difficulties in converting the model to ncnn and handling the output when there is only one output. [Solved](https://github.com/Digital2Slave/ncnn-android-yolov8-seg/wiki/Convert-yolov8%E2%80%90seg-to-ncnn-model-step-by-step)
 
 ## Result
 1. Facial Skin Diseases Classification
-2. 
+
 |   Testset        | Model prediction accuracy on PC | Model prediction accuracy on Android |
 | :--------------: | :-----------------------------: | :----------------------------------: |
 | Pigmnetation     |             84.06%              |                 83.10%               |
@@ -64,20 +69,20 @@ There are difficulties in converting the model to ncnn and handling the output w
 
 2. Facial Skin Diseases Segmentation
 
-> Update for future
+> Future updates
 
 ## Reference
 
-https://github.com/switchablenorms/CelebAMask-HQ
+- CelebAMask-HQ : https://github.com/switchablenorms/CelebAMask-HQ
 
-https://github.com/NVlabs/ffhq-dataset
+- FFHQ : https://github.com/NVlabs/ffhq-dataset
 
-https://pytorch.org/.
+- Mobilenet v2 : https://pytorch.org/
 
-https://github.com/deepcam-cn/yolov5-face.
+- YOLOv5-face : https://github.com/deepcam-cn/yolov5-face
 
-https://github.com/davisking.
+- Dlib : https://github.com/davisking
 
-https://github.com/ultralytics/ultralytics.
+- YOLOv8-seg : https://github.com/ultralytics/ultralytics
 
-https://github.com/Tencent/ncnn. 
+- Ncnn Framework : https://github.com/Tencent/ncnn
