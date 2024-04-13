@@ -42,7 +42,7 @@ https://github.com/Hieptm2002/Android-demo-app-Skin-Analysis/assets/91860427/87e
 6. Difficulty
 * There was a conflict between the Dlib and Ncnn libraries when building the application, but it has been fixed with the 
 '-fno-exceptions' bug in the NCNN library's CMake file.
-* There are differences between the image resizing methods of the PIL Python library and other resizing methods on Android (like the ncnn resize), which result in a 10% decrease in accuracy on the test set on Android compared to PC. Since the PIL Image library is not supported on Android, I wrote a new resize function in C++ that replicates the PIL resize function (Bilinear for rgb image), with cv::Mat as the input and output data type. The accuracy on the Android test set now increase between -1% and 1% compared to the PC.
+* There are differences between the image resizing methods of the PIL Python library and other resizing methods on Android (like the ncnn resize), which result in a 10% decrease in accuracy on the test set on Android compared to PC. Since the PIL Image library is not supported on Android, I wrote a new resize function in C++ that replicates the PIL resize function (Bilinear for RGB image), with cv::Mat as the input and output data type. The accuracy on the Android test set now difference between -1% and 1% compared to the PC.
 
 ## Facial Skin Diseases Segmentation 
 1. IDE
