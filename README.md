@@ -69,9 +69,9 @@ There are difficulties in converting the model to ncnn and handling the output w
 | :--------------: | :-----------------------------: | :----------------------------------: |
 | Pigmnetation     |             84.06%              |                 83.10%               |
 | Pores            |             71.08%              |                 70.28%               |
-| Forehead Wrinkle |             88.23%              |                 88.62%               |
+| Forehead Wrinkle |             88.23%              |                 88.23%               |
 | Eyes Wrinkle     |             87.84%              |                 87.45%               |
-| Smile Wrinkle    |             89.00%              |                 90.00%               |  
+| Smile Wrinkle    |             89.00%              |                 88.60%               |  
 
 > Pytorch=1.10.0+cu102
 > 
